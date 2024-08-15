@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Determinação de riscos e oportunidades: definição de critérios, comparação, avaliação, tratamento,
+        monitoramento e reavaliação</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../assets/css/splide.min.css">
+    <!-- Print -->
+    <link rel="stylesheet" href="../assets/css/print.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../assets/css/cores.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="bg-claro">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conte&uacute;do &eacute; carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
+            </div>
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
+
+        </div>
+    </header>
+
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <div class="layer-preta no-print"></div>
+        <section class="paginas">
+            <div class="pagina">
+                <div class="pagina1">
+                    <div class="container">
+
+
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="pagina">
+                <div class="pagina2">
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto paginado">
+            <ul class="pagination">
+
+            </ul>
+        </footer>
+
+    </section>
+
+
+
+    <!-- Inicio modais painel -->
+    <div class="no-print" aria-hidden="true">
+        <div class="modal fade no-print" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content w-95">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">5 porquês</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            É uma ferramenta útil para qualificar o <i>brainstorming</i>, levando à
+                            identificação dos
+                            fatores (causas) associados a cada evento de risco listado. Por exemplo:
+                        </p>
+                        <ul class="custom-bullet">
+                            <li>Processo → entrega de encomendas</li>
+                            <li>Evento de risco → atraso na entrega</li>
+                            <li>Consequência → insatisfação dos clientes</li>
+                            <li>Fator(es) de risco → falta processo para determinação das rotas</li>
+                        </ul>
+                        <img src="img/fig_modal1.png" class="img-fluid d-block mx-auto print">
+                        <figcaption class="figure-caption text-center">
+                            Os 5 porquês aplicado na identificação de fatores de risco <br>
+                            Fonte: Senac EAD (2024)
+                        </figcaption>
+                        <p class="mt-3">
+                            Essa técnica torna-se limitada na medida em que permite a identificação de uma
+                            única
+                            causa/fator a cada rodada.
+                        </p>
+                        <div class="modal-footer">
+                            <button type="button" class="botao hvr-sweep-to-right"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="no-print" aria-hidden="true">
+        <div class="modal fade no-print" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content w-95">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Árvore de falhas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            É mais vantajosa em relação aos 5 porquês, pois permite explorar mais
+                            hipóteses
+                            em
+                            uma mesma rodada de análise. Por exemplo:
+                        </p>
+                        <ul class="custom-bullet">
+                            <li>Processo → entrega de encomendas</li>
+                            <li>Evento de risco → atraso na entrega</li>
+                            <li>Consequência → insatisfação dos clientes</li>
+                            <li>Fator(es) de risco</li>
+                            <ul class="list-disc">
+                                <li>Falta processo para determinação das rotas</li>
+                                <li>Há pouco intervalo entre as entregas</li>
+                                <li>Faltam recursos técnicos para definição de rotas</li>
+                                <li>Falta plano de manutenção preventiva</li>
+                                <li>Faltam recursos na área de manutenção</li>
+                                <li>Há poucos veículos na frota</li>
+                                <li>Tipo de caminhão inadequado para o volume de entregas</li>
+                                <li>Falha na transferência dos dados do telefone para o sistema</li>
+                            </ul>
+                        </ul>
+                        <figure class="my-5">
+                            <a href="img/fig_modal2.png" target="_blank" class="img-zoom no-print">
+                                <img src="img/fig_modal2.png" class="img-fluid d-block mx-auto p-2 mb-3 no-print"
+                                    alt="Imagem" style="max-width: 100%; height: auto;">
+                            </a>
+                            <figcaption class="figure-caption text-center">
+                                Árvore de falhas aplicada na identificação de fatores de risco <br>
+                                Fonte: Senac EAD (2024)
+                            </figcaption>
+                        </figure>
+                        <div class="modal-footer">
+                            <button type="button" class="botao hvr-sweep-to-right"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="no-print" aria-hidden="true">
+        <div class="modal fade no-print" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content w-95">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Análise de <i>bow tie</i>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            É, talvez, a ferramenta mais apropriada para a descrição de riscos, pois
+                            permite
+                            a construção de uma linha de correspondência entre causa (fator) –
+                            evento –
+                            efeito (consequência). Além disso, permite a identificação dos
+                            controles.
+                        </p>
+                        <ul class="custom-bullet">
+                            <li>Processo → entrega de encomendas </li>
+                            <li>Evento de risco → atraso na entrega </li>
+                            <li>Consequência(s) </li>
+                            <ul class="list-disc">
+                                <li> Perdas financeiras</li>
+                                <li> Insatisfação dos colaboradores</li>
+                                <li> Insatisfação dos clientes</li>
+                                <li> Cancelamentos</li>
+                            </ul>
+                            <li>Fator(es) de risco </li>
+                            <ul class="list-disc">
+                                <li>Má determinação das rotas</li>
+                                <li>Não cumprimento das rotas</li>
+                                <li>Falta de manutenção preventiva</li>
+                            </ul>
+                        </ul>
+                        <figure class="my-5">
+                            <a href="img/fig_modal3.png" target="_blank" class="img-zoom no-print">
+                                <img src="img/fig_modal3.png" class="img-fluid d-block mx-auto p-2 mb-3 no-print"
+                                    alt="Imagem" style="max-width: 100%; height: auto;">
+                            </a>
+                            <figcaption class="figure-caption text-center">
+                                Diagrama de <i>bow tie</i> aplicado na identificação de fatores e
+                                consequências <br>
+                                Fonte: Senac EAD (2024)
+                            </figcaption>
+                        </figure>
+                        <div class="modal-footer">
+                            <button type="button" class="botao hvr-sweep-to-right"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fim modais painel -->
+    <!-- Modais transcrição inicio -->
+    <div class="modal fade no-print" id="modal-transcricao-audio2" tabindex="-1"
+        aria-labelledby="modal-transcricao-audio2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content no-print">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Transcrição</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        KPIs, ou “indicadores-chave do processo”, são construídos a partir de séries temporais que
+                        possibilitam a medição dos resultados dos processos. KPIs bem construídos devem mostrar a
+                        evolução
+                        da organização na proteção de valor institucional ou no aproveitamento de oportunidades. Se
+                        esses
+                        indicadores puderem trazer resultados em parâmetros financeiros, mais direta será a sua
+                        percepção de
+                        valor. Porém, outras informações, como grau de exposição ao risco ou taxa de aproveitamento de
+                        oportunidades, são dados importantes para mensurar os resultados alcançados pelo uso dessas
+                        práticas.
+                    </p>
+                    <p>
+                        Exemplos desses indicadores são quantidade de riscos tratados com redução do risco residual,
+                        valor
+                        obtido pelo aproveitamento de oportunidades, quantidade de riscos acima do apetite antes e
+                        depois do
+                        tratamento etc.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade no-print" id="modal-transcricao-audio3" tabindex="-1"
+        aria-labelledby="modal-transcricao-audio3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content no-print">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Transcrição</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        KRI, ou indicadores-chave de risco, são indicadores elaborados com a finalidade de fazer um
+                        monitoramento de riscos e oportunidades críticas para o processo, projeto ou negócio. Eles
+                        fornecem informações que alimentam decisões em níveis estratégicos, táticos ou operacionais, a
+                        partir da observação de tendências ou projeções resultantes do estudo de futuros. KRIs bem
+                        elaborados têm a capacidade de perceber antecipadamente o aumento de uma ameaça ou o surgimento
+                        de uma nova oportunidade.
+                    </p>
+                    <p>
+                        Exemplos desses indicadores são mudança na pirâmide etária, alterações climáticas, resoluções
+                        locais ou internacionais com impacto no negócio etc.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modais transcrição fim -->
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="../assets/js/geral.js"></script>
+    <script src="../assets/js/template.config.js"></script>
+
+    <script>
+        $(function () {
+            $("body").prognroll();
+        });
+
+        $(".btn-tema_pagina").click(function () {
+            console.log($(".btn-tema_pagina"))
+            if ($("body").hasClass('bg-claro')) {
+                console.log("sim");
+                $("body").removeClass('bg-claro')
+                $("body").addClass("bg-escuro");
+            } else if ($("body").hasClass('bg-escuro')) {
+                console.log("não");
+                $("body").removeClass('bg-escuro')
+                $("body").addClass("bg-claro")
+            }
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
+</html>
