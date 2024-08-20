@@ -1,79 +1,109 @@
-body {
-    background: url('img/bg.png');
-    background-attachment: fixed;
-}
-
 .espera-video {
     width: 300px;
     height: 300px;
     background-color: #C489BB;
 }
 
-.bg-azul {
-    background-color: var(--cor-primaria);
-}
-
-.bg-escuro .destaque li {
-    color: #000;
-}
-
-.bg-azul-claro {
-    background-color: #d9e2f3 !important;
-}
-
-.bg-verde-claro {
-    background-color: #e2efd9 !important;
-}
-
-.bg-laranja-claro {
-    background-color: #fbe4d5 !important;
-}
-
-.bg-cinza {
-    background-color: #d0cece !important;
-}
-
-.bg-branco td {
-    background-color: #fff;
-    color: #000 !important;
-}
-
-.bg-escuro .img-paragrafo p {
-    color: #000;
-}
-
-
-.elemento1 {
+.elemento-esquerda {
     position: absolute;
     margin-left: -52%;
-    margin-top: 14%;
+    margin-top: 48%;
 }
 
-.elemento2 {
+.elemento-direita {
     position: absolute;
-    margin-left: 103%;
-    margin-top: 6%;
+    margin-left: 121%;
+    width: 25%;
+    margin-top: -10%;
 }
 
-.elemento3 {
-    position: absolute;
-    margin-left: -52%;
-    margin-top: 14%;
+body {
+    background-image: url('../../01_experimentacao/img/textura.png');
+    background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 50% 230%, #C489BB 20%, transparent 50%);
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    /* background-attachment: fixed !important; */
+    height: auto;
+    overflow-x: hidden;
 }
 
-.painel-etapas {
-    background: url('img/bg_bts.png') no-repeat;
-    background-position: top;
-    background-size: 45%;
-    padding-bottom: 8%;
+.container p {
+    word-wrap: break-word;
 }
 
-.selo {
-    max-width: 40%;
+.margem1 {
+    margin-left: 5px;
 }
 
-.destaque-cor {
-    background: var(--cor-secundaria);
+.bg-escuro .tab-content {
+    background-color: unset;
+}
+
+.botao-fornecedores {
+    background: url('img/bt_fornecedores_hv_1.png');
+    width: 251px;
+    height: 290px;
+    border: none;
+}
+
+.botao-fornecedores:hover {
+    background: url('img/bt_fornecedores_hv.png');
+    width: 252px;
+    height: 289px;
+}
+
+.botao-colaboradores {
+    background: url('img/bt_coordenadores.png');
+    width: 251px;
+    height: 290px;
+    border: none;
+}
+
+.botao-colaboradores:hover {
+    background: url('img/bt_coordenadores_hv.png');
+    width: 252px;
+    height: 289px;
+}
+
+.botao-acionistas {
+    background: url('img/bt_acionistas.png');
+    width: 251px;
+    height: 294px;
+    border: none;
+}
+
+.botao-acionistas:hover {
+    background: url('img/bt_acionistas_hv.png');
+    width: 251px;
+    height: 294px;
+}
+
+.botao-governo {
+    background: url('img/bt_governo.png');
+    width: 251px;
+    height: 290px;
+    border: none;
+}
+
+.botao-governo:hover {
+    background: url('img/bt_governo_hv.png');
+    width: 251px;
+    height: 289px;
+}
+
+.botao-sociedade {
+    background: url('img/bt_sociedade_hv_1.png');
+    width: 250px;
+    height: 290px;
+    border: none;
+}
+
+.botao-sociedade:hover {
+    background: url('img/bt_sociedade_hv.png');
+    width: 251px;
+    height: 289px;
 }
 
 .img-zoom {
@@ -84,7 +114,7 @@ body {
 }
 
 .img-zoom::after {
-    content: url('./img/bt_visualizar.png');
+    content: url('img/bt_visualizar.png');
     display: block;
     width: 88px;
     height: 88px;
@@ -94,188 +124,21 @@ body {
     filter: drop-shadow(#333 3px 3px 4px);
 }
 
-.btn-download {
-    margin-top: -14%;
-    width: 238px;
-    height: 238px;
-    scale: 1.2;
-}
-
-.img-destaque {
-    margin-top: -15%;
-}
-
-.img-audio {
-    margin-right: 25%;
-    margin-top: 13%;
-}
-
-.audio-player::before {
-    content: '';
-    background: url('../assets/images/podcast_esq.png') no-repeat;
-    height: 276px;
-    width: 302px;
-    position: absolute;
-    left: -55px;
-    bottom: -31px;
-    scale: 0.8;
-}
-
-.audio-player::after {
-    content: '';
-    background: url('../assets/images/podcas_dir.png') no-repeat;
-    height: 275px;
-    width: 290px;
-    position: absolute;
-    right: -61px;
-    bottom: -27px;
-    z-index: 2;
-    scale: 0.8;
-}
 
 
 
 
 
 
+@media only screen and (max-width: 820px) {
 
-
-
-
-
-
-.borda-colorida2 {
-    background: var(--gradiente-borda);
-    color: #000;
-    filter: drop-shadow(rgba(82, 82, 82, 0.3) 7px 7px 5px);
-    border: 5px solid transparent;
-    border-radius: 25px;
-}
-
-.vertical-text {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-}
-
-.bg-escuro .box-atividade p {
-    color: #000;
-}
-
-.bg-escuro .box-atividade td {
-    color: #000;
-    background-color: #fff;
-}
-
-
-.img-borda {
-    padding: 5%;
-    max-width: 250px;
-    border: 5px solid transparent;
-}
-tr {
-    border-color: #fff;
-    border-style: solid;
-    border-width: 2px;
-}
-
-
-
-
-
-@media only screen and (max-width:1440px) {
-    .elemento-direita {
-        position: absolute;
-        margin-left: 96%;
-        width: 25%;
-        margin-top: -10%;
+    .botao-fornecedores,
+    .botao-colaboradores,
+    .botao-acionistas,
+    .botao-governo,
+    .botao-sociedade {
+        transform: scale(0.8);
     }
-
-    .elemento-esquerda {
-        position: absolute;
-        margin-left: -27%;
-        margin-top: 48%;
-    }
-
-    .desktop {
-        display: block;
-    }
-
-    .tablet {
-        display: none;
-    }
-
-    .elemento1,
-    .elemento3 {
-        position: absolute;
-        margin-left: -27%;
-        margin-top: 14%;
-        max-width: 26%;
-    }
-
-    .elemento2 {
-        position: absolute;
-        margin-left: 96%;
-        margin-top: 6%;
-        max-width: 24%;
-    }
-}
-
-
-@media only screen and (max-width:1400px) {
-    .elemento-direita {
-        position: absolute;
-        margin-left: 94%;
-        width: 25%;
-        margin-top: -10%;
-    }
-
-    .elemento-esquerda {
-        position: absolute;
-        margin-left: -26%;
-        margin-top: 48%;
-    }
-
-    .img-div {
-        margin-top: -5%;
-    }
-
-    .desktop {
-        display: block;
-    }
-
-    .tablet {
-        display: none;
-    }
-
-    .elemento1,
-    .elemento3 {
-        position: absolute;
-        margin-left: -26%;
-        margin-top: 23%;
-        max-width: 24%;
-    }
-}
-
-
-@media screen and (max-width:1366px) {
-
-    .elemento1,
-    .elemento3 {
-        position: absolute;
-        margin-left: -24%;
-        margin-top: 23%;
-        max-width: 22%;
-    }
-
-    .elemento2 {
-        position: absolute;
-        margin-left: 95%;
-        margin-top: 6%;
-        max-width: 22%;
-    }
-}
-
-@media screen and (max-width:820px) {
 
     .img-zoom::after {
         content: url('./img/bt_visualizar.png');
@@ -286,47 +149,19 @@ tr {
         bottom: 2%;
     }
 
-    .selo {
-        max-width: 70%;
-    }
-
-    .painel-etapas {
-        background: url(img/bg_bts.png) no-repeat;
-        background-position: top;
-        background-size: 74%;
-        padding-bottom: 8%;
-    }
-
-    .elemento1,
-    .elemento2,
-    .elemento3 {
-        display: none;
-    }
-
-    .audio-player::after{
-        left: 35%;
-    }
-
-
-
-}
-
-@media only screen and (max-width:768px) {
-
-    .paginas {
-        overflow-x: hidden;
-        /* Esconde a rolagem horizontal */
-    }
-
-    h2 {
-        padding-top: 3%;
-    }
 
 }
 
 
 
-@media screen and (max-width:480px) {
+
+
+
+@media only screen and (max-width:480px) {
+    .esquemaDaBru {
+        padding-left: 5px;
+        padding-right: 40px;
+    }
 
     .img-zoom::after {
         content: url('./img/bt_visualizar.png');
@@ -336,73 +171,5 @@ tr {
         right: 1%;
         bottom: 6%;
     }
-
-    .painel-etapas {
-        background: url(img/bg_bts.png) no-repeat;
-        background-position: center;
-        background-size: 103%;
-        padding-bottom: 7%;
-    }
-
-    .elemento1,
-    .elemento2,
-    .elemento3 {
-        display: none;
-    }
-
-    .selo {
-        max-width: 40%;
-    }
-
-    .bg-podcast::after {
-        content: '';
-        background: unset;
-    }
-
-    .esquemaDaBru .alt-c,
-    .esquemaDaBru .alt-e {
-        padding: 5px 10px;
-        text-align: left;
-        width: auto;
-    }
-
-    .audio-player::before {
-        scale: 0.7;
-        left: -75px;
-        bottom: -35px;
-        top: 156px;
-    }
-
-    .audio-player::after {
-        scale: 0.7;
-        top: 156px;
-    }
-
-
-
-
-
-
-
-
-
-}
-
-@media screen and (max-width: 375px) {
-    .selo {
-        max-width: 40%;
-    }
-    .audio-player::before {
-        scale: 0.65;
-        left: -86px;
-        bottom: -35px;
-        top: 156px;
-    }
-    .audio-player::after {
-        scale: 0.65;
-        top: 156px;
-        left: 35px;
-    }
-
 
 }
