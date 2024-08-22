@@ -40,9 +40,159 @@ body {
   background-color: unset;
 }
 
+.painel-melhorias {
+    background: url('img/painel_melhoria_continua.png');
+    width: 425px;
+    height: 420px;
+    margin: auto;
+}
+
+.botao-plan {
+    position: relative;
+    overflow: visible;
+    padding: 50px 89px;
+    font-size: 16px;
+    border-radius: 10px;
+    max-width: 450px;
+    left: 0%;
+    top: 6%;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+}
+
+.botao-plan:hover::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: 45px;
+    width: 97px;
+    height: 98px;
+    background: url('img/hover.png') no-repeat;
+    transition: opacity 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.botao-do {
+    position: relative;
+    overflow: visible;
+    padding: 89px 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    max-width: 450px;
+    left: 32%;
+    top: 2%;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+}
+
+.botao-do:hover::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: -45px;
+    width: 97px;
+    height: 98px;
+    background: url('img/hover.png') no-repeat;
+    transition: opacity 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+.botao-check {
+    position: relative;
+    overflow: visible;
+    padding: 50px 89px;
+    font-size: 16px;
+    border-radius: 10px;
+    max-width: 450px;
+    left: 0%;
+    top: -49%;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+}
+
+.botao-check:hover::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    width: 97px;
+    height: 98px;
+    background: url('img/hover.png') no-repeat;
+    transition: opacity 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.botao-act {
+    position: relative;
+    overflow: visible;
+    padding: 89px 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    max-width: 450px;
+    left: -32%;
+    top: -44%;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+}
+
+.botao-act:hover::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    width: 97px;
+    height: 98px;
+    background: url('img/hover.png') no-repeat;
+    transition: opacity 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width:480px){
 .esquemaDaBru{
 padding-left: 5px;
 padding-right: 40px;
-}}
+}
+
+.painel-melhorias{
+    transform: scale(0.8);
+    margin-left: -40px !important;
+}
+
+
+}
+
+
+@media only screen and (max-width:380px){
+    .painel-melhorias{
+        transform: scale(0.75);
+        margin-left: -54px !important;
+    }
+
+
+
+}
