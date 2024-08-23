@@ -4,12 +4,13 @@
     background-color: #C489BB;
 }
 
-.elemento-esquerda{
+.elemento-esquerda {
     position: absolute;
     margin-left: -52%;
     margin-top: 48%;
 }
-.elemento-direita{
+
+.elemento-direita {
     position: absolute;
     margin-left: 121%;
     width: 25%;
@@ -20,24 +21,24 @@ body {
     background-image: url('../../01_experimentacao/img/textura.png');
     background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 50% 230%, #C489BB 20%, transparent 50%);
     position: relative;
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
-	background-position: center !important;
-	/* background-attachment: fixed !important; */
-	height: auto;
-	overflow-x: hidden;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    /* background-attachment: fixed !important; */
+    height: auto;
+    overflow-x: hidden;
 }
 
 .container p {
     word-wrap: break-word;
 }
 
-.margem1{
+.margem1 {
     margin-left: 5px;
 }
 
 .bg-escuro .tab-content {
-  background-color: unset;
+    background-color: unset;
 }
 
 .painel-melhorias {
@@ -156,39 +157,75 @@ body {
     box-shadow: none !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width:480px){
-.esquemaDaBru{
-padding-left: 5px;
-padding-right: 40px;
+.img-zoom {
+    display: table;
+    position: relative;
+    margin: 0px auto;
+    cursor: pointer;
 }
 
-.painel-melhorias{
-    transform: scale(0.8);
-    margin-left: -40px !important;
+.img-zoom::after {
+    content: url('img/bt_visualizar.png');
+    display: block;
+    width: 88px;
+    height: 88px;
+    right: 20%;
+    bottom: 2%;
+    position: absolute;
+    filter: drop-shadow(#333 3px 3px 4px);
 }
 
 
+
+
+
+
+
+
+
+
+@media only screen and (max-width:820px) {
+    .img-zoom::after {
+        content: url('./img/bt_visualizar.png');
+        display: block;
+        width: 88px;
+        height: 88px;
+        right: 5%;
+        bottom: 2%;
+    }
+
 }
 
 
-@media only screen and (max-width:380px){
-    .painel-melhorias{
+
+
+
+
+@media only screen and (max-width:480px) {
+    .esquemaDaBru {
+        padding-left: 5px;
+        padding-right: 40px;
+    }
+
+    .painel-melhorias {
+        transform: scale(0.8);
+        margin-left: -40px !important;
+    }
+
+    .img-zoom::after {
+        content: url('./img/bt_visualizar.png');
+        display: block;
+        width: 88px;
+        height: 88px;
+        right: 1%;
+        bottom: 6%;
+    }
+
+}
+
+
+@media only screen and (max-width:380px) {
+    .painel-melhorias {
         transform: scale(0.75);
         margin-left: -54px !important;
     }
