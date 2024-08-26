@@ -1,0 +1,171 @@
+.espera-video {
+    width: 300px;
+    height: 300px;
+    background-color: #C489BB;
+}
+
+.elemento1 {
+    position: absolute;
+    margin-left: -53%;
+    margin-top: -25%;
+}
+
+.elemento2 {
+    position: absolute;
+    margin-left: -53%;
+    margin-top: -25%;
+}
+
+.elemento3 {
+    position: absolute;
+    margin-left: -53%;
+    margin-top: -25%;
+}
+
+.elemento4 {
+    position: absolute;
+    margin-left: -53%;
+    margin-top: -25%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #cee1f2, #ffff);
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    /* background-attachment: fixed !important; */
+    height: auto;
+    overflow-x: hidden;
+}
+
+.container p {
+    word-wrap: break-word;
+}
+
+.margem1 {
+    margin-left: 5px;
+}
+
+.bg-escuro .tab-content {
+    background-color: unset;
+}
+
+.img-zoom {
+    display: table;
+    position: relative;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.img-zoom::after {
+    content: url('img/bt_visualizar.png');
+    display: block;
+    width: 88px;
+    height: 88px;
+    right: 20%;
+    bottom: 2%;
+    position: absolute;
+    filter: drop-shadow(#333 3px 3px 4px);
+}
+
+.modal-fullscreen {
+    width: 90vw;
+    max-width: none;
+    height: 88%;
+    margin: 80px;
+}
+
+.bg-escuro .destaque li {
+    color: #000;
+}
+
+.bg-escuro .box-atividade p {
+    color: #000;
+}
+
+
+@media only screen and (max-width:1440px) {
+    .modal-fullscreen {
+        width: 90vw;
+        max-width: none;
+        height: 88%;
+        margin: 65px;
+    }
+
+}
+
+
+@media only screen and (max-width:1400px) {
+    .modal-fullscreen {
+        width: 90vw;
+        max-width: none;
+        height: 88%;
+        margin: 70px;
+    }
+
+
+}
+
+@media only screen and (max-width:1370px) {
+    .elemento1, .elemento2, .elemento3, .elemento4 {
+        position: absolute;
+        margin-left: -31%;
+        margin-top: -25%;
+        transform: scale(0.6);
+    }
+}
+
+
+
+@media only screen and (max-width:820px) {
+    .img-zoom::after {
+        content: url('./img/bt_visualizar.png');
+        display: block;
+        width: 88px;
+        height: 88px;
+        right: 5%;
+        bottom: 2%;
+    }
+
+    .modal-fullscreen {
+        width: 90vw;
+        max-width: none;
+        height: 92%;
+        margin: 38px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:480px) {
+    .esquemaDaBru {
+        padding-left: 5px;
+        padding-right: 40px;
+    }
+
+    .img-zoom::after {
+        content: url('./img/bt_visualizar.png');
+        display: block;
+        width: 88px;
+        height: 88px;
+        right: 1%;
+        bottom: 6%;
+    }
+
+    .modal-fullscreen {
+        width: 90vw;
+        max-width: none;
+        height: 92%;
+        margin: 21px;
+    }
+}
+
+
+@media only screen and (max-width:380px) {
+
+
+
+
+}

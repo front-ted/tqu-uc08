@@ -235,7 +235,6 @@ body {
 
 }
 
-
 @media only screen and (max-width:1370px) {
     .elemento1, .elemento2, .elemento3, .elemento4 {
         position: absolute;
@@ -244,15 +243,6 @@ body {
         transform: scale(0.6);
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -281,11 +271,6 @@ body {
     }
 
 }
-
-
-
-
-
 
 @media only screen and (max-width:480px) {
     .esquemaDaBru {
