@@ -4,22 +4,32 @@
     background-color: #C489BB;
 }
 
-.elemento-esquerda {
+.elemento1 {
     position: absolute;
-    margin-left: -52%;
-    margin-top: 48%;
+    margin-left: -53%;
+    margin-top: -25%;
 }
 
-.elemento-direita {
+.elemento2 {
     position: absolute;
-    margin-left: 121%;
-    width: 25%;
-    margin-top: -10%;
+    margin-left: -53%;
+    margin-top: -25%;
+}
+
+.elemento3 {
+    position: absolute;
+    margin-left: -53%;
+    margin-top: -25%;
+}
+
+.elemento4 {
+    position: absolute;
+    margin-left: -53%;
+    margin-top: -25%;
 }
 
 body {
-    background-image: url('../../01_experimentacao/img/textura.png');
-    background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 50% 230%, #C489BB 20%, transparent 50%);
+    background-image: linear-gradient(to bottom, #cee1f2, #ffff);
     position: relative;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -175,6 +185,68 @@ body {
     filter: drop-shadow(#333 3px 3px 4px);
 }
 
+.modal-fullscreen {
+    width: 90vw;
+    max-width: none;
+    height: 88%;
+    margin: 80px;
+}
+
+.bg-escuro .destaque li {
+    color: #000;
+}
+
+.bg-escuro .box-atividade p {
+    color: #000;
+}
+
+
+@media only screen and (max-width:1440px) {
+    .modal-fullscreen {
+        width: 90vw;
+        max-width: none;
+        height: 88%;
+        margin: 65px;
+    }
+
+    .elemento1, .elemento2, .elemento3, .elemento4 {
+        position: absolute;
+        margin-left: -33%;
+        margin-top: -25%;
+        transform: scale(0.7);
+    }
+}
+
+
+@media only screen and (max-width:1400px) {
+    .modal-fullscreen {
+        width: 90vw;
+        max-width: none;
+        height: 88%;
+        margin: 70px;
+    }
+
+    .elemento1, .elemento2, .elemento3, .elemento4 {
+        position: absolute;
+        margin-left: -31%;
+        margin-top: -25%;
+        transform: scale(0.7);
+    }
+
+}
+
+
+@media only screen and (max-width:1370px) {
+    .elemento1, .elemento2, .elemento3, .elemento4 {
+        position: absolute;
+        margin-left: -31%;
+        margin-top: -25%;
+        transform: scale(0.6);
+    }
+}
+
+
+
 
 
 
@@ -192,6 +264,20 @@ body {
         height: 88px;
         right: 5%;
         bottom: 2%;
+    }
+
+    .modal-fullscreen {
+        width: 90vw;
+        max-width: none;
+        height: 92%;
+        margin: 38px;
+    }
+
+    .elemento1,
+    .elemento2,
+    .elemento3,
+    .elemento4 {
+        display: none;
     }
 
 }
@@ -221,6 +307,12 @@ body {
         bottom: 6%;
     }
 
+    .modal-fullscreen {
+        width: 90vw;
+        max-width: none;
+        height: 92%;
+        margin: 21px;
+    }
 }
 
 
