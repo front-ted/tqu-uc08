@@ -84,6 +84,13 @@ body {
     color: #000;
 }
 
+.margem-esq{
+    margin-left: 5px;
+}
+
+.margem-dir{
+    margin-right: 5px;
+}
 
 @media only screen and (max-width:1440px) {
     .modal-fullscreen {
