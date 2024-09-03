@@ -209,7 +209,10 @@ body {
         margin: 65px;
     }
 
-    .elemento1, .elemento2, .elemento3, .elemento4 {
+    .elemento1,
+    .elemento2,
+    .elemento3,
+    .elemento4 {
         position: absolute;
         margin-left: -33%;
         margin-top: -25%;
@@ -226,7 +229,10 @@ body {
         margin: 70px;
     }
 
-    .elemento1, .elemento2, .elemento3, .elemento4 {
+    .elemento1,
+    .elemento2,
+    .elemento3,
+    .elemento4 {
         position: absolute;
         margin-left: -31%;
         margin-top: -25%;
@@ -236,7 +242,11 @@ body {
 }
 
 @media only screen and (max-width:1370px) {
-    .elemento1, .elemento2, .elemento3, .elemento4 {
+
+    .elemento1,
+    .elemento2,
+    .elemento3,
+    .elemento4 {
         position: absolute;
         margin-left: -31%;
         margin-top: -25%;
@@ -270,7 +280,19 @@ body {
         display: none;
     }
 
+    .modal-dialog {
+        max-width: 690px;
+        margin: 1.75rem auto;
+    }
 }
+
+@media only screen and (max-width:768px) {
+    .modal-dialog {
+        max-width: 650px;
+        margin: 1.75rem auto;
+    }
+}
+
 
 @media only screen and (max-width:480px) {
     .esquemaDaBru {

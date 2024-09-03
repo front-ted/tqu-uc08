@@ -100,12 +100,6 @@ body {
 }
 
 
-
-
-
-
-
-
 @media only screen and (max-width:1440px) {
     .modal-fullscreen {
         width: 90vw;
@@ -115,7 +109,6 @@ body {
     }
 
 }
-
 
 @media only screen and (max-width:1400px) {
     .modal-fullscreen {
@@ -128,8 +121,6 @@ body {
     body {
         background: unset;
     }
-
-
 }
 
 @media only screen and (max-width:1370px) {
@@ -174,8 +165,18 @@ body {
         height: 92%;
         margin: 38px;
     }
+    .modal-dialog {
+        max-width: 690px;
+        margin: 1.75rem auto;
+    }
+}
 
 
+@media only screen and (max-width:768px) {
+    .modal-dialog {
+        max-width: 650px;
+        margin: 1.75rem auto;
+    }
 
 }
 
@@ -202,5 +203,3 @@ body {
     }
 }
 
-
-@media only screen and (max-width:380px) {}
