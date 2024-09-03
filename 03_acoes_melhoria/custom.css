@@ -29,12 +29,12 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #cee1f2, #ffff);
+    background: url('img/bg_layout.png');
     position: relative;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
-    /* background-attachment: fixed !important; */
+    background-attachment: fixed !important;
     height: auto;
     overflow-x: hidden;
 }
@@ -84,6 +84,24 @@ body {
     color: #000;
 }
 
+.botao-aplicacao{
+    background: url('img/bt_exemplo_aplicacao.png') no-repeat;
+    width: 165px;
+    height: 167px;
+    border: none !important;
+}
+.botao-aplicacao:hover{
+    background: url('img/bt_exemplo_aplicacao_hv.png') no-repeat;
+}
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width:1440px) {
     .modal-fullscreen {
@@ -104,15 +122,34 @@ body {
         margin: 70px;
     }
 
+    body {
+        background: unset;
+    }
+
 
 }
 
 @media only screen and (max-width:1370px) {
-    .elemento1, .elemento2, .elemento3, .elemento4 {
+
+    .elemento1,
+    .elemento2,
+    .elemento3,
+    .elemento4 {
         position: absolute;
         margin-left: -31%;
         margin-top: -25%;
         transform: scale(0.6);
+    }
+
+    body {
+        background: url('img/bg_layout.png');
+        position: relative;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-attachment: fixed !important;
+        height: auto;
+        overflow-x: hidden;
     }
 }
 
@@ -163,9 +200,4 @@ body {
 }
 
 
-@media only screen and (max-width:380px) {
-
-
-
-
-}
+@media only screen and (max-width:380px) {}
