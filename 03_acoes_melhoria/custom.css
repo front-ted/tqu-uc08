@@ -84,17 +84,20 @@ body {
     color: #000;
 }
 
-.botao-aplicacao{
+.botao-aplicacao {
     background: url('img/bt_exemplo_aplicacao.png') no-repeat;
     width: 165px;
     height: 167px;
     border: none !important;
 }
-.botao-aplicacao:hover{
+
+.botao-aplicacao:hover {
     background: url('img/bt_exemplo_aplicacao_hv.png') no-repeat;
 }
 
-
+.imagem-fundo {
+    background-color: #fff !important;
+}
 
 
 
