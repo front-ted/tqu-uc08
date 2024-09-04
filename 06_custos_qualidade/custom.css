@@ -111,25 +111,13 @@ tr {
     border-width: 2px;
 }
 
-
-
-
-
-@media only screen and (max-width:1440px) {
-    
-
+.bg-escuro li{
+    color: #000 !important;
 }
 
 
-@media only screen and (max-width:1400px) {
-    
-}
 
 
-@media screen and (max-width:1366px) {
-
-
-}
 
 @media screen and (max-width:820px) {
 
