@@ -4,37 +4,12 @@
     background-color: #C489BB;
 }
 
-.elemento1 {
-    position: absolute;
-    margin-left: -53%;
-    margin-top: -25%;
-}
-
-.elemento2 {
-    position: absolute;
-    margin-left: -53%;
-    margin-top: -25%;
-}
-
-.elemento3 {
-    position: absolute;
-    margin-left: -53%;
-    margin-top: -25%;
-}
-
-.elemento4 {
-    position: absolute;
-    margin-left: -53%;
-    margin-top: -25%;
-}
-
 body {
-    background-image: linear-gradient(to bottom, #cee1f2, #ffff);
+    background: url('img/bg_layout.png');
     position: relative;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    background-position: center !important;
-    /* background-attachment: fixed !important; */
+    background-attachment: fixed !important;
     height: auto;
     overflow-x: hidden;
 }
@@ -84,15 +59,19 @@ body {
     color: #000;
 }
 
-.margem-esq{
+.margem-esq {
     margin-left: 5px;
 }
 
-.margem-dir{
+.margem-dir {
     margin-right: 5px;
 }
 
-
+.painel-sensos{
+    background: url('img/infografico_senso.png');
+    width: 472px;
+    height: 435px;
+}
 
 
 
@@ -121,7 +100,11 @@ body {
 }
 
 @media only screen and (max-width:1370px) {
-    .elemento1, .elemento2, .elemento3, .elemento4 {
+
+    .elemento1,
+    .elemento2,
+    .elemento3,
+    .elemento4 {
         position: absolute;
         margin-left: -31%;
         margin-top: -25%;
@@ -147,6 +130,7 @@ body {
         height: 92%;
         margin: 38px;
     }
+
     .modal-dialog {
         max-width: 690px;
         margin: 1.75rem auto;
@@ -188,9 +172,4 @@ body {
 }
 
 
-@media only screen and (max-width:380px) {
-
-
-
-
-}
+@media only screen and (max-width:380px) {}
