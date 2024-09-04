@@ -1275,7 +1275,7 @@
                         seja, se
                         não tratada adequadamente a causa, o efeito poderá voltar a ocorrer.
                     </p>
-                    <div class="espera-video">objeto</div>
+                    <div class="espera-video no-print">objeto</div>
                     <p>
                         Há um exemplo de fácil entendimento para diferenciar os dois tipos de ação, pois é uma situação
                         que
@@ -1349,91 +1349,97 @@
                         “prevenir
                         é o melhor remédio”.
                     </p>
-                    <p><b>Que tal fixar os conteúdos referentes aos tipos de ação que você acabou de estudar? </b> </p>
-                    <p>Você deve relacionar o tipo de ação com a ação que foi realizada, conforme os exemplos
-                        anteriores.</p>
+                    <div class="no-print" aria-hidden="true">
+                        <p><b>Que tal fixar os conteúdos referentes aos tipos de ação que você acabou de estudar? </b>
+                        </p>
+                        <p>Você deve relacionar o tipo de ação com a ação que foi realizada, conforme os exemplos
+                            anteriores.</p>
 
-                    <div class="box-atividade">
-                        <p class="titulo-ativ"><strong>Relacionar colunas</strong></p>
-                        <div class="game-associar-colunas no-print nao-imprimir">
-                            <div class="row">
-                                <div class="col-12 col-sm-4 flexs itens">
-                                    <button data-resp="1" class="item item1">
-                                        <p>Ação imediata</p>
-                                    </button>
+                        <div class="box-atividade">
+                            <p class="titulo-ativ"><strong>Relacionar colunas</strong></p>
+                            <div class="game-associar-colunas no-print nao-imprimir">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 flexs itens">
+                                        <button data-resp="1" class="item item1">
+                                            <p>Ação imediata</p>
+                                        </button>
 
-                                    <button data-resp="2" class="item item2">
-                                        <p>Ação corretiva </p>
-                                    </button>
+                                        <button data-resp="2" class="item item2">
+                                            <p>Ação corretiva </p>
+                                        </button>
 
-                                    <button data-resp="3" class="item item3 mb-2">
-                                        <p>Ação preventiva </p>
-                                    </button>
+                                        <button data-resp="3" class="item item3 mb-2">
+                                            <p>Ação preventiva </p>
+                                        </button>
 
+                                    </div>
+                                    <div class="col-12 col-sm-8 flexs">
+                                        <button type="button" data-resp="2" class="resp resp2">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Revisar o telhado do anexo da casa</p>
+                                        </button>
+
+                                        <button type="button" data-resp="1" class="resp resp1">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Colocar o balde embaixo da goteira </p>
+                                        </button>
+
+                                        <button type="button" data-resp="3" class="resp resp3">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Consertar a telha trincada </p>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-sm-8 flexs">
-                                    <button type="button" data-resp="2" class="resp resp2">
-                                        <div class="txtacao"><i class="fas fa-question"></i></div>
-                                        <p>Revisar o telhado do anexo da casa</p>
-                                    </button>
 
-                                    <button type="button" data-resp="1" class="resp resp1">
-                                        <div class="txtacao"><i class="fas fa-question"></i></div>
-                                        <p>Colocar o balde embaixo da goteira </p>
-                                    </button>
-
-                                    <button type="button" data-resp="3" class="resp resp3">
-                                        <div class="txtacao"><i class="fas fa-question"></i></div>
-                                        <p>Consertar a telha trincada </p>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <!-- Modal -->
-                            <div class="modal fade associar_colunas_modal  no-print nao-imprimir"
-                                id="associar_colulas_errou" tabindex="-1" aria-labelledby="associarColunasErrou"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-12 col-lg-4">
-                                                    <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg"
-                                                        class="img-fluid" alt="">
-                                                </div>
-                                                <div class="col-12 col-lg-8">
-                                                    <p>Que pena! A resposta não está correta. Releia o conteúdo e tente
-                                                        novamente! </p>
+                                <!-- Modal -->
+                                <div class="modal fade associar_colunas_modal  no-print nao-imprimir"
+                                    id="associar_colulas_errou" tabindex="-1" aria-labelledby="associarColunasErrou"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4">
+                                                        <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg"
+                                                            class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="col-12 col-lg-8">
+                                                        <p>Que pena! A resposta não está correta. Releia o conteúdo e
+                                                            tente
+                                                            novamente! </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade associar_colunas_modal no-print nao-imprimir"
-                                id="associar_colulas_acertou" tabindex="-1" aria-labelledby="associarColunasAcertou"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-12 col-lg-4">
-                                                    <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg"
-                                                        class="img-fluid" alt="">
-                                                </div>
-                                                <div class="col-12 col-lg-8">
-                                                    <p>Parabéns, você entendeu o conteúdo e acertou a questão! </p>
+                                <!-- Modal -->
+                                <div class="modal fade associar_colunas_modal no-print nao-imprimir"
+                                    id="associar_colulas_acertou" tabindex="-1" aria-labelledby="associarColunasAcertou"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="associarColunasAcertou">Resposta correta
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4">
+                                                        <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg"
+                                                            class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="col-12 col-lg-8">
+                                                        <p>Parabéns, você entendeu o conteúdo e acertou a questão! </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
