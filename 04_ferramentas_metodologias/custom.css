@@ -67,11 +67,82 @@ body {
     margin-right: 5px;
 }
 
-.painel-sensos{
+.painel-sensos {
     background: url('img/infografico_senso.png');
     width: 472px;
     height: 435px;
 }
+
+.botao-utilizacao {
+    position: absolute;
+    background-color: transparent !important;
+    margin-top: 0%;
+    left: 44%;
+    width: 139px;
+    height: 121px;
+    border: none;
+}
+
+.botao-limpeza {
+    position: absolute;
+    background-color: transparent !important;
+    margin-top: 33%;
+    left: 54%;
+    width: 139px;
+    height: 121px;
+    border: none;
+
+}
+
+.botao-padronizacao {
+    position: absolute;
+    background-color: transparent !important;
+    margin-top: 33%;
+    left: 32%;
+    width: 139px;
+    height: 121px;
+    border: none;
+}
+
+.botao-disciplina {
+    position: absolute;
+    background-color: transparent !important;
+    margin-top: 16%;
+    left: 25%;
+    width: 139px;
+    height: 121px;
+    border: none;
+}
+
+.botao-ordenacao {
+    position: absolute;
+    background-color: transparent !important;
+    margin-top: 16%;
+    left: 60%;
+    width: 139px;
+    height: 121px;
+    border: none;
+}
+
+.botao-pdf {
+    background-image: url('../assets/images/ico_download.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -136,6 +207,62 @@ body {
         margin: 1.75rem auto;
     }
 
+    .botao-utilizacao {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 0%;
+        left: 42%;
+        width: 139px;
+        height: 121px;
+        border: none;
+    }
+
+    .botao-disciplina {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 19%;
+        left: 21%;
+        width: 139px;
+        height: 121px;
+        border: none;
+    }
+
+    .botao-padronizacao {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 38%;
+        left: 29%;
+        width: 139px;
+        height: 121px;
+        border: none;
+    }
+
+    .botao-ordenacao {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 19%;
+        left: 62%;
+        width: 139px;
+        height: 121px;
+        border: none;
+    }
+
+    .botao-limpeza {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 38%;
+        left: 54%;
+        width: 139px;
+        height: 121px;
+        border: none;
+    }
+
+
+
+
+
+
+
 
 }
 
@@ -144,11 +271,60 @@ body {
         max-width: 650px;
         margin: 1.75rem auto;
     }
+
+    .botao-ordenacao {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 20%;
+        left: 63%;
+        width: 139px;
+        height: 121px;
+        border: none;
+    }
+
+    .botao-disciplina {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 20%;
+        left: 19%;
+        width: 139px;
+        height: 121px;
+        border: none;
+    }
+
+    .botao-limpeza {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 41%;
+        left: 55%;
+        width: 139px;
+        height: 121px;
+        border: none;
+    }
+
+    .botao-padronizacao {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 41%;
+        left: 28%;
+        width: 139px;
+        height: 121px;
+        border: none;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 
 
-@media only screen and (max-width:480px) {
+@media screen and (max-width:480px) {
     .esquemaDaBru {
         padding-left: 5px;
         padding-right: 40px;
@@ -169,7 +345,131 @@ body {
         height: 92%;
         margin: 21px;
     }
+
+    .painel-sensos {
+        background: url('img/infografico_senso_mobile.png');
+        width: 353px;
+        height: 325px;
+    }
+
+    .botao-utilizacao {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 0%;
+        left: 39%;
+        width: 104px;
+        height: 91px;
+        border: none;
+    }
+
+    .botao-disciplina {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 29%;
+        left: 8%;
+        width: 103px;
+        height: 89px;
+        border: none;
+    }
+
+    .botao-ordenacao {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 28%;
+        left: 68%;
+        width: 102px;
+        height: 95px;
+        border: none;
+    }
+
+    .botao-padronizacao {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 56%;
+        left: 20%;
+        width: 100px;
+        height: 96px;
+        border: none;
+    }
+
+    .botao-limpeza {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 57%;
+        left: 57%;
+        width: 105px;
+        height: 92px;
+        border: none;
+    }
+
+
+
+
+
+
+
+
+
+
 }
 
 
-@media only screen and (max-width:380px) {}
+@media screen and (max-width:380px) {
+
+    .botao-utilizacao {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 0%;
+        left: 42%;
+        width: 104px;
+        height: 91px;
+        border: none;
+    }
+
+    .botao-disciplina {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 31%;
+        left: 8%;
+        width: 103px;
+        height: 89px;
+        border: none;
+    }
+
+    .botao-ordenacao {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 30%;
+        left: 74%;
+        width: 102px;
+        height: 95px;
+        border: none;
+    }
+
+    .botao-padronizacao {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 63%;
+        left: 22%;
+        width: 100px;
+        height: 96px;
+        border: none;
+    }
+
+    .botao-limpeza {
+        position: absolute;
+        background-color: transparent !important;
+        margin-top: 63%;
+        left: 62%;
+        width: 105px;
+        height: 92px;
+        border: none;
+    }
+
+
+
+
+
+
+
+}
