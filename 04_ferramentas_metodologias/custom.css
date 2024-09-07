@@ -145,7 +145,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 .tooltip-definir {
@@ -223,7 +223,6 @@ body {
     position: absolute;
 }
 
-
 .painel-triangulo {
     background: url('img/painel_seis_sigma_layout.png') no-repeat;
     width: 504px;
@@ -258,7 +257,6 @@ body {
     background: url('img/painel_seis_sigma_hv_02.png') no-repeat;
 }
 
-
 .botao-green {
     background: url('img/painel_seis_sigma_03.png') no-repeat;
     position: absolute;
@@ -272,7 +270,6 @@ body {
 .botao-green:hover {
     background: url('img/painel_seis_sigma_hv_03.png') no-repeat;
 }
-
 
 .botao-black {
     background: url('img/painel_seis_sigma_04.png') no-repeat;
@@ -304,14 +301,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 @media only screen and (max-width:1440px) {
     .modal-fullscreen {
         width: 90vw;
@@ -330,8 +319,6 @@ body {
         height: 88%;
         margin: 70px;
     }
-
-
 }
 
 @media only screen and (max-width:1370px) {
@@ -458,11 +445,6 @@ body {
         margin-top: 0%;
         margin-left: 23.3%;
     }
-
-
-
-
-
 }
 
 @media screen and (max-width:768px) {
@@ -550,11 +532,6 @@ body {
     }
 
 }
-
-
-
-
-
 
 
 
@@ -685,18 +662,6 @@ body {
         margin-left: 37.95%;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -751,11 +716,5 @@ body {
         height: 92px;
         border: none;
     }
-
-
-
-
-
-
 
 }
