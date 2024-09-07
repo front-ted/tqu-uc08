@@ -2553,6 +2553,7 @@
                             para evitar erros e melhorar a eficiência e a qualidade.
                         </p>
                     </div>
+                    <p class="no-print">Agora assista ao vídeo sobre <i>Poka Yoke</i>. </p>
                     <div class="espera-video d-block no-print">
                         ESPERA VIDEO
                     </div>
@@ -2905,7 +2906,8 @@
                         <img src="img/fig_comparativo.png"
                             class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block print"
                             alt="Imagem" style="max-width: 100%; height: auto;">
-                        <a href="img/fig_comparativo.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                        <a href="img/fig_comparativo.png" target="_blank"
+                            class="img-zoom d-sm-block d-md-none d-lg-none no-print">
                             <img src="img/fig_comparativo.png"
                                 class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none no-print"
                                 alt="Imagem" style="max-width: 100%; height: auto;">
@@ -3210,11 +3212,25 @@
                         fases,
                         conhecido como DMAIC:
                     </p>
-
-
-
-                    <!-- painel clicável abrindo Tooltip em cada conteúdo. -->
-
+                    <div class="no-print" aria-hidden="true">
+                        <div class="painel-bg mx-auto">
+                            <div class="tooltip-definir" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Esta fase inclui a identificação do problema ou definição do objetivo do projeto. ">
+                            </div>
+                            <div class="tooltip-mensurar" data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="Nesta fase, são coletados dados relevantes para entender o desempenho atual do processo e identificar áreas de melhoria. ">
+                            </div>
+                            <div class="tooltip-analisar" data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="Esta fase tem como objetivo analisar os dados para identificar as causas raízes dos problemas e determinar quais variáveis têm maior impacto.  ">
+                            </div>
+                            <div class="tooltip-improvisar" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Nesta fase, são implementadas soluções para corrigir as causas raízes identificadas e melhorar o processo. ">
+                            </div>
+                            <div class="tooltip-controlar" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Esta última fase é a fase de controle, na qual se estabelecem controles para manter as melhorias e monitorar o desempenho do processo, para garantir que as mudanças sejam sustentáveis e que os benefícios sejam mantidos. ">
+                            </div>
+                        </div>
+                    </div>
                     <div class="acessivel visually-hidden print">
                         <h4>Definir (<i>define</i>)</h4>
                         <p> Esta fase inclui a identificação do problema ou definição do objetivo do projeto.</p>
@@ -3353,34 +3369,19 @@
                             </p>
                         </div>
                     </div>
-                    <div class="painel-triangulo no-print" aria-hidden="true">
+                    <div class="no-print" aria-hidden="true">
                         <p>Clique ou toque para visualizar o conteúdo.</p>
-                        <div class="row text-center no-print">
-                            <div class="col-12 col-sm-6 col-md-6">
-                                <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3"
-                                    data-bs-toggle="modal" data-bs-target="#modal14"> white belt
-                                </button>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6">
-                                <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3"
-                                    data-bs-toggle="modal" data-bs-target="#modal15"> yellow belt
-                                </button>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6">
-                                <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3"
-                                    data-bs-toggle="modal" data-bs-target="#modal16"> green belt
-                                </button>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6">
-                                <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3"
-                                    data-bs-toggle="modal" data-bs-target="#modal17"> black belt
-                                </button>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6">
-                                <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3"
-                                    data-bs-toggle="modal" data-bs-target="#modal18"> master black belt
-                                </button>
-                            </div>
+                        <div class="painel-triangulo mx-auto">
+                            <button type="button" class="botao-white" data-bs-toggle="modal" data-bs-target="#modal14">
+                            </button>
+                            <button type="button" class="botao-yellow" data-bs-toggle="modal" data-bs-target="#modal15">
+                            </button>
+                            <button type="button" class="botao-green" data-bs-toggle="modal" data-bs-target="#modal16">
+                            </button>
+                            <button type="button" class="botao-black" data-bs-toggle="modal" data-bs-target="#modal17">
+                            </button>
+                            <button type="button" class="botao-master" data-bs-toggle="modal" data-bs-target="#modal18">
+                            </button>
                         </div>
                     </div>
                     <figcaption class="figure-caption text-center mt-3 mb-3">
@@ -4070,15 +4071,30 @@
                         progressão gradual, mostrando como as equipes passam de problemas simples para desafios mais
                         complexos à medida que adquirem experiência e conhecimento:
                     </p>
-                    <figure class="my-5 d-block mx-auto">
-                        <img src="img/"
-                            class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-none d-lg-block print"
+                    <figure class="my-2 d-block mx-auto">
+                        <img src="img/infog_competencia_solucao_nivel1.png"
+                            class="img-fluid d-block mx-auto p-2 mb-1 print"
                             alt="Imagem" style="max-width: 100%; height: auto;">
-                        <a href="img/" target="_blank" class="img-zoom d-sm-block d-md-block d-lg-none no-print">
-                            <img src="img/"
-                                class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-block d-lg-none no-print"
-                                alt="Imagem" style="max-width: 100%; height: auto;">
-                        </a>
+                    </figure>
+                    <figure class="my-2 d-block mx-auto">
+                        <img src="img/infog_competencia_solucao_nivel2.png"
+                            class="img-fluid d-block mx-auto p-2 mb-1 print"
+                            alt="Imagem" style="max-width: 100%; height: auto;">
+                    </figure>
+                    <figure class="my-2 d-block mx-auto">
+                        <img src="img/infog_competencia_solucao_nivel3.png"
+                            class="img-fluid d-block mx-auto p-2 mb-3 print"
+                            alt="Imagem" style="max-width: 100%; height: auto;">
+                    </figure>
+                    <figure class="my-2 d-block mx-auto">
+                        <img src="img/infog_competencia_solucao_nivel4.png"
+                            class="img-fluid d-block mx-auto p-2 mb-3 print"
+                            alt="Imagem" style="max-width: 100%; height: auto;">
+                    </figure>
+                    <figure class="my-2 d-block mx-auto">
+                        <img src="img/infog_competencia_solucao_nivel5.png"
+                            class="img-fluid d-block mx-auto p-2 mb-3 print"
+                            alt="Imagem" style="max-width: 100%; height: auto;">
                     </figure>
                     <figcaption class="figure-caption text-center mb-3">
                         Evolução da competência para a solução de problemas <br>
@@ -4516,223 +4532,6 @@
         </div>
     </div>
 
-
-    <div class="no-print" aria-hidden="true">
-        <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content w-95">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Superprodução </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Produzir mais do que o necessário ou antes do necessário.</p>
-                        <p>
-                            <b>Exemplo</b>: uma empresa de eletrônicos fabrica um grande lote de
-                            <i>smartphones</i>
-                            baseado em
-                            previsões de vendas otimistas para um novo modelo. No entanto, a demanda real pelo
-                            produto é
-                            menor do que o esperado. Como resultado, muitos <i>smartphones</i> ficam parados no
-                            estoque,
-                            levando a custos adicionais de armazenamento e necessidade de descontos para tentar
-                            vender o
-                            excedente.
-                        </p>
-                        <div class="modal-footer">
-                            <button type="button" class="botao hvr-sweep-to-right"
-                                data-bs-dismiss="modal">Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="no-print" aria-hidden="true">
-        <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content w-95">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Tempo de espera </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Tempo ocioso que produtos ou pessoas gastam esperando por algo (materiais,
-                            informações,
-                            pessoas etc.).
-                        </p>
-                        <p>
-                            <b>Exemplo</b>: em uma clínica médica, os pacientes aguardam longos períodos antes
-                            de
-                            serem
-                            atendidos em razão de uma programação ineficiente e de atrasos nos procedimentos
-                            anteriores.
-                        </p>
-                        <div class="modal-footer">
-                            <button type="button" class="botao hvr-sweep-to-right"
-                                data-bs-dismiss="modal">Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="no-print" aria-hidden="true">
-        <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content w-95">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Transporte </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Movimentação desnecessária de materiais, produtos ou ferramentas e informações em
-                            excesso ou
-                            desnecessárias à execução do trabalho.
-                        </p>
-                        <p>
-                            <b>Exemplo</b>: em uma fábrica de móveis, as peças de madeira cortadas são
-                            transportadas
-                            de um
-                            setor para outro que fica distante, resultando em tempo e esforço desnecessários
-                            apenas
-                            para
-                            mover materiais de um lugar para outro.
-                        </p>
-                        <div class="modal-footer">
-                            <button type="button" class="botao hvr-sweep-to-right"
-                                data-bs-dismiss="modal">Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="no-print" aria-hidden="true">
-        <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content w-95">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Excesso de processamento </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Realizar mais trabalho ou mais etapas do que o necessário.</p>
-                        <p>
-                            <b>Exemplo</b>: em uma empresa de <i>software</i>, os desenvolvedores são orientados
-                            a
-                            incluir
-                            funcionalidades adicionais e complexas em um aplicativo, mesmo que essas
-                            funcionalidades
-                            não
-                            tenham sido solicitadas pelos clientes e não sejam essenciais para o uso principal
-                            do
-                            produto. Isso resulta em um <i>software</i> mais complexo e difícil de usar, além de
-                            maior
-                            tempo e
-                            custo de desenvolvimento sem aumentar o valor percebido pelos clientes.
-                        </p>
-                        <div class="modal-footer">
-                            <button type="button" class="botao hvr-sweep-to-right"
-                                data-bs-dismiss="modal">Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="no-print" aria-hidden="true">
-        <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content w-95">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Estoque</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Estoque excessivo que não agrega valor.</p>
-                        <p>
-                            <b>Exemplo</b>: uma loja de roupas mantém um grande estoque de uma coleção passada
-                            que
-                            não está
-                            vendendo bem. Esse excesso de inventário ocupa espaço valioso e representa dinheiro
-                            parado
-                            que poderia ser mais bem utilizado.
-                        </p>
-                        <div class="modal-footer">
-                            <button type="button" class="botao hvr-sweep-to-right"
-                                data-bs-dismiss="modal">Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="no-print" aria-hidden="true">
-        <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content w-95">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Movimento</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Movimentação desnecessária de pessoas ou equipamentos.</p>
-                        <p>
-                            <b>Exemplo</b>: em uma linha de montagem de eletrônicos, os funcionários precisam se
-                            deslocar
-                            frequentemente para pegar ferramentas ou componentes que estão mal posicionados,
-                            causando
-                            fadiga e perda de tempo.
-                        </p>
-                        <div class="modal-footer">
-                            <button type="button" class="botao hvr-sweep-to-right"
-                                data-bs-dismiss="modal">Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="no-print" aria-hidden="true">
-        <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content w-95">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Defeitos</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Produtos ou serviços que não atendem aos padrões de qualidade, resultando em
-                            retrabalho,
-                            desperdício ou insatisfação do cliente.
-                        </p>
-                        <p>
-                            <b>Exemplo</b>: em uma fábrica de brinquedos, uma série de carrinhos é produzida com
-                            rodas
-                            defeituosas, exigindo retrabalho ou descarte, o que consome tempo e recursos
-                            adicionais.
-                        </p>
-                        <div class="modal-footer">
-                            <button type="button" class="botao hvr-sweep-to-right"
-                                data-bs-dismiss="modal">Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="no-print" aria-hidden="true">
         <div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -5807,6 +5606,13 @@
                 $("body").addClass("bg-claro")
             }
         });
+    </script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
     </script>
 
     <!-- Handtalk -->
