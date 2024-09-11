@@ -301,6 +301,22 @@ body {
 
 
 
+
+
+
+.botao-utilizacao.hvr-sweep-to-right:hover::before,
+.botao-ordenacao.hvr-sweep-to-right:hover::before,
+.botao-limpeza.hvr-sweep-to-right:hover::before,
+.botao-padronizacao.hvr-sweep-to-right:hover::before,
+.botao-disciplina.hvr-sweep-to-right:hover::before,
+.botao-utilizacao.hvr-sweep-to-right::before,
+.botao-ordenacao.hvr-sweep-to-right::before,
+.botao-limpeza.hvr-sweep-to-right::before,
+.botao-padronizacao.hvr-sweep-to-right::before,
+.botao-disciplina.hvr-sweep-to-right::before{
+    background-color: transparent !important;
+}
+
 @media only screen and (max-width:1440px) {
     .modal-fullscreen {
         width: 90vw;

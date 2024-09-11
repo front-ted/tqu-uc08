@@ -1,3 +1,20 @@
+body{
+    background-image: url('img/bg.svg') !important;
+    background-attachment: fixed;
+}
+.paginas{
+    padding-right: 200px;
+}
+.pagina{
+    position: relative;
+}
+.float-img{
+    right: 0;
+    position: fixed;
+    width: 200px;
+    top: 0px;
+    height: 732px;
+}
 .espera-video {
     width: 300px;
     height: 300px;
@@ -131,6 +148,12 @@ body {
 
 
 @media only screen and (max-width: 820px) {
+    .paginas{
+        padding-right: 0px;
+    }
+    .float-img{
+        display: none;
+    }
 
     .botao-fornecedores,
     .botao-colaboradores,

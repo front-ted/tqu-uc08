@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .3;
+      }
+
+      .cls-2 {
+        fill: url(#Gradiente_sem_nome_23);
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_23" data-name="Gradiente sem nome 23" x1="486.17" y1="1360.69" x2="1433.83" y2="-280.69" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#004684"/>
+      <stop offset=".33" stop-color="#506388"/>
+      <stop offset=".65" stop-color="#997e8b"/>
+      <stop offset=".88" stop-color="#c68e8e"/>
+      <stop offset="1" stop-color="#d8958f"/>
+    </linearGradient>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada_1">
+    <g class="cls-1">
+      <rect class="cls-2" width="1920" height="1080"/>
+    </g>
+  </g>
+</svg>

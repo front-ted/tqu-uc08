@@ -114,11 +114,84 @@ tr {
 .bg-escuro li{
     color: #000 !important;
 }
+.bloco1, .bloco2, .bloco3, .bloco4, .bloco5, .bloco6{
+    position: relative;
+}
+.float-img{
+    position: absolute;
+    width: 15%;
+    top: 100px;
+}
+.img-esq{
+    left: 20px;
+}
+.img-dir{
+    right: 20px;
+}
+#bt1-painelcustor,#bt2-painelcustor,#bt3-painelcustor,#bt4-painelcustor{
+    width: 221px;
+    height: 83px;
+    color: transparent;
+    background-repeat: no-repeat;
+}
+#bt1-painelcustor{
+    background-image: url(img/bt_avaliacao.png);
+}
+#bt1-painelcustor:hover{
+    background-image: url(img/bt_avaliacao_hv.png);
+}
+#bt2-painelcustor{
+    background-image: url(img/bt_prevencao.png);
+}
+#bt2-painelcustor:hover{
+    background-image: url(img/bt_prevencao_hv.png);
+}
+#bt3-painelcustor{
+    background-image: url(img/bt_falhas_internas.png);
+}
+#bt3-painelcustor:hover{
+    background-image: url(img/bt_falhas_internas_hv.png);
+}
+#bt4-painelcustor{
+    background-image: url(img/bt_falhas_externas.png);
+}
+#bt4-painelcustor:hover{
+    background-image: url(img/bt_falhas_externas_hv.png);
+}
+#bt1-painelcustor.hvr-sweep-to-right:hover::before,
+#bt2-painelcustor.hvr-sweep-to-right:hover::before,
+#bt3-painelcustor.hvr-sweep-to-right:hover::before,
+#bt4-painelcustor.hvr-sweep-to-right:hover::before{
+    background-color: transparent !important;
+}
+
+#bt1-painelcustor.hvr-sweep-to-right::before,
+#bt2-painelcustor.hvr-sweep-to-right::before,
+#bt3-painelcustor.hvr-sweep-to-right::before,
+#bt4-painelcustor.hvr-sweep-to-right::before{
+    background-color: transparent !important;
+}
 
 
-
-
-
+@media screen and (max-width:1350px) {
+    .float-img{
+        position: absolute;
+        width: 10%;
+        top: 80px;
+    }
+}
+@media screen and (max-width:1250px) {
+    .float-img{
+        position: absolute;
+        width: 8%;
+        top: 80px;
+    }
+}
+@media screen and (max-width:1150px) {
+    .float-img{
+        display: none;
+    }
+}
 @media screen and (max-width:820px) {
 
     .img-zoom::after {
