@@ -202,8 +202,31 @@ body {
 .bg-escuro .box-atividade p {
     color: #000;
 }
+.bt-sportCenter,
+.bt-tectronic{
+    width: 137px;
+    height: 100px;
+}
 
-
+.bt-sportCenter{
+    background-image: url('img/bt_sportcenter.png');
+    transition: all 0.3 ease-in-out;
+}
+.bt-tectronic{
+    background-image: url('img/bt_tectronic.png');
+    transition: all 0.3 ease-in-out;
+}
+.bt-sportCenter:hover{
+    transform: scale(1.1);
+    background-image: url('img/bt_sportcenter_hv.png');
+}
+.bt-tectronic:hover{
+    transform: scale(1.1);
+    background-image: url('img/bt_tectronic_hv.png');
+}
+.bt-sportCenter.hvr-sweep-to-right::before,.bt-tectronic.hvr-sweep-to-right::before {
+    background-color: transparent
+}
 @media only screen and (max-width:1440px) {
     .modal-fullscreen {
         width: 90vw;
