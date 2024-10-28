@@ -746,3 +746,27 @@ body {
     }
 
 }
+
+
+ .iframe-responsivo {
+    width: 100%; 
+    height: 85vh; 
+    border: none;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+
+
+  @media (max-width: 768px) {
+    .iframe-responsivo {
+      height: 100vh;
+      max-width: 100%; 
+    }
+  }
+
+ 
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .iframe-responsivo {
+      height: 85vh;
+    }
+  }
