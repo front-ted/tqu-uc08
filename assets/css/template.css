@@ -1008,7 +1008,6 @@ tbody td:first-child {
     filter: drop-shadow(#000 4px 4px 5px);
 }
 
-
 @media screen and (max-width: 1530px) {
     .ilustracao-float {
         width: 14vw;
