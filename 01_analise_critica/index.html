@@ -1898,7 +1898,47 @@
                         não tratada adequadamente a causa, o efeito poderá voltar a ocorrer.
                     </p>
                     <p class="no-print" aria-hidden="true">Clique ou toque para visualizar um exemplo. </p>
-                    <div class="espera-video no-print">objeto</div>
+
+                    <style>
+                        .hq {
+                            max-width: 600px;
+                            margin: auto;
+
+                        }
+
+                        .btn-hq-proximo {
+                            background-color: #444567;
+                            border-color: #444567;
+                            font-size: 20px;
+                            padding: 15px;
+                            color: #fff;
+                            font-weight: bold;
+                        }
+
+                        .btn-hq-proximo:hover,
+                        .btn-hq-proximo:focus {
+                            background-color: #696a88;
+                            border-color: #696a88;
+                            font-size: 20px;
+                            padding: 15px;
+                            color: #fff;
+                            font-weight: bold;
+                        }
+                    </style>
+                    <div id="hq1" class="hq mt-5 mb-5" aria-hidden="true" data-radical="hq" data-quadro-inicial="1"
+                        data-quadro-final="7">
+                        <div class="corpo">
+
+                        </div>
+                        <nav class="botoes">
+                            <button type="button" class="btn btn-primary btn-hq-proximo w-100">Próximo
+                                quadrinho</button>
+                        </nav>
+                    </div>
+
+
+
+
                     <div class="only-print">
                         <p>
                             Há um exemplo de fácil entendimento para diferenciar os dois tipos de ação, pois é uma
@@ -2644,6 +2684,62 @@
                 $("body").addClass("bg-claro")
             }
         });
+    </script>
+
+    <!-- Scripts das HQs -->
+
+    <script>
+
+        var img_alt = [
+            "Há um exemplo que gosto muito, e que é de fácil entendimento para a diferenciar os dois tipos de ação, pois trata-se de uma situação que pode acontecer na casa de qualquer pessoa.",
+            "Imagine que está chovendo e surgiu uma goteira na sua sala, que está molhando o seu tapete! Você precisa fazer algo para que seu tapete pare de ser molhado nesse instante (Ação imediata).",
+            "Você então pega um balde e coloca embaixo da goteira, logo a água passa a cair no balde e não mais no tapete, sanando momentaneamente o problema.",
+            "Mas, você precisa identificar o que está causando esse problema para saná-lo definitivamente (Ação corretiva), ou seja, de onde está vindo essa água, afinal, você não pode ficar com um balde no meio da sala para sempre, não é mesmo? Sabendo que não passa nenhuma tubulação de água no teto da casa, o problema só pode ser no telhado, então você decide subir lá e ver o que houve.",
+            "No dia seguinte parou de chover e você sobe no telhado. Ao chegar lá constata que há uma telha trincada.",
+            "Você troca a telha para evitar que o problema volte a ocorrer na próxima chuva. E como você irá verificar a eficácia dessa ação? Na próxima chuva ou ainda você pode colocar água em cima do local que foi feito o reparo.",
+            "Então, gostaram do exemplo? É bem provável que a partir de agora sempre que você se deparar com um problema, você irá pensar: “Não basta apenas aparar a água, é necessário também consertar o telhado.”"
+        ]
+
+        $(function () {
+            var hqTED = function (el, path) {
+
+                $(el).each(function (index, element) {
+                    let hq_id = "#" + $(this).attr("id");
+                    let hq_radical = $(this).attr("data-radical");
+                    let hq_quadro_inicio = $(this).attr("data-quadro-inicial");
+                    let hq_quadro_fim = $(this).attr("data-quadro-final");
+
+                    for (i = hq_quadro_inicio; i <= hq_quadro_fim; i++) {
+                        let esconder = "";
+                        if (i > 1) esconder = "d-none";
+                        $(hq_id + " .corpo").append('<img src="' + path + '/' + hq_radical + i + '.png" class="img-fluid img' + i + ' ' + esconder + '" alt="' + img_alt[i - 1] + '">');
+                    }
+                    $(hq_id).attr("data-quadro-atual", "1");
+                })
+            }
+
+            $("body").on("click", ".btn-hq-proximo", function () {
+                let hq_id = "#" + $(this).parents(".hq").attr("id");
+                let hq_quadro_atual = $(hq_id).attr("data-quadro-atual");
+                let hq_quadro_fim = $(hq_id).attr("data-quadro-final");
+                if (hq_quadro_atual == (hq_quadro_fim - 1)) {
+                    $(this).remove()
+                }
+                $(hq_id).attr("data-quadro-atual", ++hq_quadro_atual)
+                console.log(hq_id, hq_quadro_atual)
+                $(hq_id + " .corpo img").eq(--hq_quadro_atual).removeClass("d-none");
+
+                $('html, body').animate({
+                    scrollTop: $(hq_id + " .corpo .img" + ++hq_quadro_atual).offset().top
+                }, 'slow');
+
+            });
+
+            hqTED(".hq", "oda/hq")
+
+
+        });
+
     </script>
 
     <!-- Handtalk -->
